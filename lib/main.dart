@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:manager/feature/home/home_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:manager/feature/home/screen/user_screen.dart';
 
 void main() {
   runApp(ProviderScope(child: const MyApp()));
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: HomeScreen(),
+      home: UserScreen(),
     );
   }
 }

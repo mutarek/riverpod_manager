@@ -9,6 +9,20 @@ class AppConstants {
     'Other',
     'Prefer not to say',
   ];
+
+  static const String baseUrl = 'https://jsonplaceholder.typicode.com';
+
+  // Endpoints
+  static const String users = '/users';
+  static const String posts = '/posts';
+  static const String comments = '/comments';
+
+  // Timeout durations
+  static const Duration connectTimeout = Duration(seconds: 30);
+  static const Duration receiveTimeout = Duration(seconds: 30);
+
+  // API Keys (use environment variables in production)
+  static const String apiKey = 'YOUR_API_KEY';
 }
 
 class AppStrings {
